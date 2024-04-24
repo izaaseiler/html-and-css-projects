@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* Define o tamanho padrão da fonte raiz para 16px */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-size: 0.875rem; /* 14px em rem */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F1F1F;
+    margin: 0.625rem; /* 10px em rem */
+    padding: 1.25rem; /* 20px em rem */
+    border-radius: 0.625rem; /* 10px em rem */
+    width: 24rem; /* 384px em rem */
+    height: auto;
+}
+
+.profile-image {
+    width: 10.625rem; /* 170px em rem */
+    height: 10.625rem; /* 170px em rem */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.25rem; /* 20px em rem */
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-name {
+    font-size: 2rem;
+    color: #FFF;
+    margin-bottom: 0.625rem; /* 10px em rem */
+}
+
+.profile-location {
+    font-size: 1.2rem;
+    color: #C4F82A;
+    margin-bottom: 0.625rem; /* 10px em rem */
+}
+
+.profile-title {
+    font-size: 1.1rem;
+    color: #FFF;
+    margin-bottom: 1.875rem; /* 30px em rem */
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.profile-link {
+    width: 100%;
+    height: 2.5rem; /* 40px em rem */
+    line-height: 2.1875rem; /* 35px em rem */
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #333;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.profile-link:hover {
+    background-color: #C4F82A;
+    color: #333;
+}
+
+@media (max-width: 37.5rem) { /* 37.5rem = 600px */
+    .profile {
+        width: 100%;
+        margin-bottom: 0.625rem; /* 10px em rem */
+    }
+
+    .profile-image {
+        width: 11.25rem; /* 180px em rem */
+        height: 11.25rem; /* 180px em rem */
+        margin-bottom: 0.625rem; /* 10px em rem */
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    .profile-title {
+        font-size: 1rem;
+        margin-bottom: 1.25rem; /* 20px em rem */
+    }
+
+    .profile-links {
+        width: 100%;
+    }
+}
