@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+/* estilo CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #F3E5D7;
+    color: #312E2C;
+    font-family: 'Young Serif', serif;
+}
+
+/* Recipe Page styling */
+.recipe-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 24px;
+    width: 700px;
+    height: auto;
+}
+
+/* Recipe Photo styling */
+.recipe-photo {
+    margin: 1rem;
+    width: auto;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Recipe Name styling */
+.recipe-name {
+    margin: 1%;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 42px;
+    font-family: 'Young Serif', serif;
+}
+
+/* Recipe Description styling */
+.recipe-description {
+    margin: 1%;
+    margin-top: 0.1px;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Recipe blocks */
+.recipe-preparation-block, .recipe-ingredients-block, .recipe-instructions-block {
+    margin: 2%;
+    padding: 20px;
+    border-radius: 12px;
+    width: 650px;
+    color: #7A284E;
+}
+
+.recipe-preparation-block {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #FFF7FB; 
+    color: #7A284E; 
+    width: auto;
+}
+
+/* Configurações de lista na lista 1 */
+.recipe-preparation-block ul {
+    list-style-type: disc;
+    color: #312E2C;
+    padding-left: 20px;
+    margin: 3%;
+}
+
+.recipe-preparation-block ul li {
+    padding: 4px 10px;
+    margin: 0 0 20px;
+    font-size: 18px;
+    line-height: 0.8;
+}
+
+/* Configurações de lista na lista 2 */
+.recipe-ingredients-block ul {
+    list-style-type: disc;
+    color: #7A284E;
+    padding-left: 20px;
+    margin-top: 3%;
+}
+
+.recipe-ingredients-block ul li {
+    padding: 4px 10px;
+    margin: 0 0 20px;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #5F564D;
+}
+
+.recipe-ingredients-block li::marker{
+    color: #7A284E;
+}
+
+/* Configurações de lista na lista 3 */
+.recipe-instructions-block ul {
+    list-style-type: decimal;
+    color: #5F564D;
+    padding-left: 20px;
+}
+
+.recipe-instructions-block ul li {
+    padding: 4px 10px;
+    margin: 0 0 20px;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #5F564D;
+    margin-top: 3%;
+}
+
+.recipe-instructions-block li::marker{
+    color: #7A284E;
+}
+
+/* estilos das listas */
+ol {
+    list-style-type: lower-roman;
+    padding-left: 20px;
+}
+
+ol li {
+    font-family: 'Young Serif', serif;
+    margin: 0 0 20px;
+}
+
+
+/* Media Query para a responsividade*/
+@media (max-width: 600px) {
+    .recipe-photo {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .recipe-name,.recipe-description,.recipe-preparation-block,.recipe-ingredients-block,.recipe-instructions-block {
+        width: 100%;
+        margin-bottom: 10px;
+        margin: 20px auto;
+    }
+}
+
+
