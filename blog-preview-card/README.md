@@ -1,1 +1,1 @@
-card-prev-blog.netlify.app
+https://card-prev-blog.netlify.app
