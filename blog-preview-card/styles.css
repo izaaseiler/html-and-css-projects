@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.square {
+    padding: auto;
+    width: 90%;
+    height: 90%;
+    background-color: #F4D04E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-black {
+    width: 384px;
+    height: 522px;
+    background-color: #000000;
+    border-radius: 20px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+}
+
+.card-white {
+    width: 384px;
+    height: 522px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border-color: #000000;
+    margin-top: -2%;
+    margin-left: -2%;
+    display: flex;
+    flex-direction:column;
+}
+
+.card-image {
+    margin: 2rem;
+    width: auto;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+
+.card-name {
+    margin-top: 0.2%;
+    margin-left: 8%;
+    padding: 6px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #F4D04E;
+    width: 60px;
+    height: 15px;
+    border-radius: 6px;
+}
+
+.card-txt {
+    margin-top: 0.5%;
+    margin-left: 6%;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1%;
+}
+
+.card-theme {
+    margin-top: 0.1%;
+    margin-left: 6%;
+    padding: 10px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1%;
+    color:#F4D04E;
+}
+
+.card-description {
+    margin-top: -4%;
+    margin-left: 6%;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 25px;
+    color: #7F7F7F;
+}
+
+.icon-image {
+    margin-top: -4%;
+    margin-left: 30px;
+    margin-bottom: 0.1%;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 360%;
+    object-fit: cover;
+}
+
+.icon-name {
+    margin-left: 75px;
+    margin-top: -7%;
+    font-size: 14px;
+    font-weight: 800;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+
+    .body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: auto;
+        align-items: auto;
+    }
+
+    .square {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-black {
+        justify-content: center;
+    }
+
+    .card-white {
+        width: 100%;
+    }
+
+}
